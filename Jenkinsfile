@@ -23,7 +23,10 @@ pipeline {
 
 		stage('Generate Allure Report') {
 			steps {
-				bat 'allure generate allure-results --clean -o allure-report'
+				script {
+					def allureHome = tool 'Allure'
+					bat "${allureHome}\\bin\\allure generate allure-results --clean -o allure-report"
+				}
 			}
 		}
 
