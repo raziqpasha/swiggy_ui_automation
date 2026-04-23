@@ -1,0 +1,86 @@
+2026-04-17 00:30:34 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: SwiggyUiAutomation =======
+2026-04-17 00:30:45 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:30:45 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:30:45 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:30:45 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:30:46 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: SwiggyUiAutomation =======
+2026-04-17 00:33:31 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: SwiggyUiAutomation =======
+2026-04-17 00:33:34 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:33:38 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST PASSED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:33:39 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: SwiggyUiAutomation =======
+2026-04-17 00:38:31 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 00:38:34 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:34 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:37 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:37 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:39 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:39 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:38:39 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:38:44 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:38:44 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 00:43:15 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 00:43:18 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:19 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:22 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:22 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:25 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:26 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:43:26 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:43:29 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:43:30 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 00:52:19 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: SwiggyUiAutomation =======
+2026-04-17 00:52:22 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:52:22 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:52:22 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:52:22 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:52:23 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: SwiggyUiAutomation =======
+2026-04-17 00:52:58 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 00:53:02 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:06 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:08 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:08 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:10 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:10 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:53:10 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:53:13 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:53:14 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 00:53:53 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: SwiggyUiAutomation =======
+2026-04-17 00:53:56 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:54:00 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST PASSED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:54:00 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: SwiggyUiAutomation =======
+2026-04-17 00:55:39 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: SwiggyUiAutomation =======
+2026-04-17 00:55:42 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:55:42 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 00:55:42 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 00:55:46 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 00:55:46 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: SwiggyUiAutomation =======
+2026-04-17 08:50:37 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 08:50:37 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:50:37 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:50:38 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 08:55:37 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 08:55:37 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:55:37 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:55:37 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 08:59:51 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 08:59:51 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:59:51 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 08:59:51 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 09:12:36 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 09:12:36 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:12:36 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:12:36 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 09:14:23 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE STARTED: Tests =======
+2026-04-17 09:14:27 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:14:30 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:14:34 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:14:34 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:14:34 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 09:14:38 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]
+2026-04-17 09:14:39 [main] INFO  org.uiframework.listeners.TestListener - ======= TEST SUITE FINISHED: Tests =======
+2026-04-17 09:29:52 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:29:57 [main] WARN  org.uiframework.listeners.TestListener - ========= TEST SKIPPED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:30:03 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:30:08 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_launchswiggyANDverifyHomePage =========
+2026-04-17 09:30:08 [main] ERROR org.uiframework.listeners.TestListener - Final failure detected → capturing screenshot
+2026-04-17 09:30:09 [main] ERROR org.uiframework.listeners.TestListener - Error: expected [true] but found [false]

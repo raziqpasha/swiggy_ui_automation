@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+
+    <Appenders>
+
+        <!-- Console Appender → prints logs in terminal -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n"/>
+        </Console>
+
+        <!-- Rolling File Appender → separate log per test -->
+        <RollingFile name="FileLogger"
+                     fileName="logs/${ctx:testName}.log"
+                     filePattern="logs/${ctx:testName}-%d{yyyy-MM-dd}.log.gz">
+
+            <!-- Log format -->
+            <PatternLayout
+                    pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n"/>
+
+            <!-- Rotate logs daily -->
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <Root level="info">
+
+            <!-- Console logs -->
+            <AppenderRef ref="ConsoleAppender"/>
+
+            <!-- File logs (per test) -->
+            <AppenderRef ref="FileLogger"/>
+
+        </Root>
+
+    </Loggers>
+
+</Configuration>

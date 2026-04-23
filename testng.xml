@@ -1,0 +1,14 @@
+<suite name="Suite">
+
+    <listeners>
+        <listener class-name="org.uiframework.listeners.RetryListener"/>
+        <listener class-name="org.uiframework.listeners.TestListener"/>
+    </listeners>
+
+    <test name="Tests">
+        <classes>
+            <class name="org.uiframework.testcases.TC01_launch_and_verify"/>
+        </classes>
+    </test>
+
+</suite>
