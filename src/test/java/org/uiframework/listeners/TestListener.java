@@ -18,29 +18,27 @@ public class TestListener implements ITestListener {
     // ========================= TEST START =========================
     @Override
     public void onTestStart(ITestResult result) {
-
         String testName = result.getName();
-        // Set test name for log file
         LogManagerUtil.setTestName(testName);
 
-        log.info("========= TEST STARTED: " + result.getName() + " =========");
-        Allure.step("Test Started: " + result.getName());
+        log.info("========= TEST STARTED: " + testName + " =========");
+        Allure.step("Test Started: " + testName);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        LogManagerUtil.clear();
 
         log.info("========= TEST PASSED: " + result.getName() + " =========");
         Allure.step("Test Passed: " + result.getName());
 
-        // Optional → attach logs for success
-        // LogUtils.attachLog();
+        // optional:
+        // LogUtils.attachLog(result.getName());
+
+        LogManagerUtil.clear();
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        LogManagerUtil.clear();
 
         log.error("========= TEST FAILED: " + result.getName() + " =========");
 
@@ -48,12 +46,8 @@ public class TestListener implements ITestListener {
 
         if (isFinalFailure) {
 
-            log.error("Final failure detected → capturing screenshot");
-
-            // Screenshot
             ScreenshotUtils.attachScreenshot(result.getName());
 
-            // Page Source (VERY IMPORTANT)
             Allure.addAttachment(
                     "Page Source",
                     "text/html",
@@ -61,25 +55,29 @@ public class TestListener implements ITestListener {
                     ".html"
             );
 
-            // Error message
             if (result.getThrowable() != null) {
                 String errorMsg = result.getThrowable().getMessage();
-                log.error("Error: " + errorMsg);
+                log.error(errorMsg);
                 Allure.step("Error: " + errorMsg);
             }
 
-            // ✅ Attach logs ONLY here
+            // ✅ Attach logs BEFORE clearing
             LogUtils.attachLog(result.getName());
         }
+
+        // ✅ CLEAR AT END ONLY
+        LogManagerUtil.clear();
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
-        LogManagerUtil.clear();
 
         log.warn("========= TEST SKIPPED: " + result.getName() + " =========");
         Allure.step("Test Skipped: " + result.getName());
+
+        LogManagerUtil.clear();
     }
+
     // ========================= HELPER METHOD =========================
     private boolean isFinalFailure(ITestResult result) {
 
