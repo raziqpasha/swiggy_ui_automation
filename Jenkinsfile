@@ -67,6 +67,16 @@ pipeline {
 			}
 		}
 
+		success {
+			emailext(
+				subject: "Build Success",
+				body: "Report: ${env.BUILD_URL}allure",
+				to: "sjraziq@gmail.com"
+			)
+		}
+
+
+
 		failure {
 			echo 'Test Failed ❌'
 		}
