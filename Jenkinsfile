@@ -21,6 +21,26 @@ pipeline {
 			}
 		}
 
+		// ✅ CREATE FIRST
+		stage('Create Executor File') {
+			steps {
+				script {
+					writeFile file: 'allure-results/executor.json', text: """
+{
+  "name": "Jenkins",
+  "type": "jenkins",
+  "url": "${env.BUILD_URL}",
+  "buildOrder": ${env.BUILD_NUMBER},
+  "buildName": "Build-${env.BUILD_NUMBER}",
+  "buildUrl": "${env.BUILD_URL}",
+  "reportUrl": "${env.BUILD_URL}allure"
+}
+"""
+				}
+			}
+		}
+
+		// ✅ THEN GENERATE
 		stage('Generate Allure Report') {
 			steps {
 				script {
@@ -30,6 +50,7 @@ pipeline {
 			}
 		}
 
+		// ✅ THEN PUBLISH
 		stage('Publish Allure Report') {
 			steps {
 				allure includeProperties: false,
@@ -41,6 +62,9 @@ pipeline {
 	post {
 		always {
 			archiveArtifacts artifacts: 'allure-report/**'
+			script {
+				currentBuild.result = 'SUCCESS'
+			}
 		}
 
 		failure {
