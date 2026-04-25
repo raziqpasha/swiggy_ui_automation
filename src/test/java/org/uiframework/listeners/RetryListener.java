@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 
 public class RetryListener implements IAnnotationTransformer {
 
+    //ITestAnnotation = "controls @Test behavior dynamically"
     @Override
     public void transform(ITestAnnotation annotation,
                           Class testClass,

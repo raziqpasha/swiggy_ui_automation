@@ -1,0 +1,8 @@
+2026-04-25 12:44:44 [main] INFO  org.uiframework.listeners.TestListener - ========= TEST STARTED: test_filter =========
+2026-04-25 12:45:01 [main] ERROR org.uiframework.listeners.TestListener - ========= TEST FAILED: test_filter =========
+2026-04-25 12:45:01 [main] ERROR org.uiframework.listeners.TestListener - Expected condition failed: waiting for element to be clickable: By.xpath: //div[text()='Aply'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61455}, goog:processID: 24300, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61455/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 81837eb8ee46a8868017bc2ef9d19702

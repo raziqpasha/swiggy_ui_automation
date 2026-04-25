@@ -4,17 +4,31 @@
 
     <Appenders>
 
-        <!-- Console -->
+        <!-- Console logs -->
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout
                     pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n"/>
         </Console>
 
-        <!-- File (single log file) -->
-        <File name="FileLogger" fileName="logs/app.log">
-            <PatternLayout
-                    pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n"/>
-        </File>
+        <!-- ✅ Dynamic log per test -->
+        <Routing name="RoutingAppender">
+
+            <!-- Use testName from ThreadContext -->
+            <Routes pattern="$${ctx:testName}">
+
+                <Route>
+                    <File name="FileLogger"
+                          fileName="logs/${ctx:testName}.log">
+
+                        <PatternLayout
+                                pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger - %msg%n"/>
+
+                    </File>
+                </Route>
+
+            </Routes>
+
+        </Routing>
 
     </Appenders>
 
@@ -22,7 +36,7 @@
 
         <Root level="info">
             <AppenderRef ref="ConsoleAppender"/>
-            <AppenderRef ref="FileLogger"/>
+            <AppenderRef ref="RoutingAppender"/>
         </Root>
 
     </Loggers>
